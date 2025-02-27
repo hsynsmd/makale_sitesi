@@ -1,0 +1,238 @@
+
+/* Home Page Stilleri */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.home-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.home-subtitle {
+  font-size: 1.2rem;
+  color: #495057;
+  margin-bottom: 30px;
+}
+
+/* Giriş Yap Butonu */
+.home-login-button {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.home-login-button:hover {
+  background-color: #0056b3;
+}
+
+/* Diğer Butonlar */
+.home-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.home-buttons button {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.home-buttons button:hover {
+  transform: translateY(-5px);
+}
+
+.btn-blue {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-blue:hover {
+  background-color: #0056b3;
+}
+
+.btn-green {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-green:hover {
+  background-color: #218838;
+}
+
+.btn-yellow {
+  background-color: #ffc107;
+  color: black;
+}
+
+.btn-yellow:hover {
+  background-color: #e0a800;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 2.5rem;
+  }
+
+  .home-buttons {
+    gap: 15px;
+  }
+}
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Arama çubuğu ile buton arasındaki boşluk */
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  max-width: 500px; /* Arama çubuğu genişliği */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: #0056b3;
+}
+
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Butonlar arasındaki boşluk */
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:disabled {
+  background-color: #adb5bd;
+  cursor: not-allowed;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #343a40;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #495057;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.article-image {
+  border-radius: 10px;
+  max-height: 400px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.article-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #495057;
+}
+
+.comment-box {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.comment-box textarea {
+  resize: none;
+}
+
+.comment-item {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-danger:hover {
+  background-color: #c82333;
+}
